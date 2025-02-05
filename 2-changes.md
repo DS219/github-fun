@@ -65,8 +65,6 @@ origin	git@github.com:<gitusername>/<repo>.git (push)
 Then to push your committed changes from your local machine to the remote GitHub repo, where others can see it or clone it, use:  
 `git push origin master` 
 
-This should prompt you for your GitHub username and password. You won't see your password on the screen as you type it in.
-
 Then you should see:  
 ```
 Enumerating objects: 4, done.
@@ -79,3 +77,5 @@ To github.com:<gitusername>/<repo>.git
    9e62e6c..41e204c  master -> master
 
 ```
+
+Now navigate to your repository on github.com, you should now see the `questions.txt` file there as well!
