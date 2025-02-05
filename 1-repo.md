@@ -9,18 +9,25 @@ Choose a name for your repo (ex. `myawesomerepo`). Choose the button to make the
 ![PACSPull Plugin](/images/repo/github-repo-initialize.png)
 
 ### Step 1.2 Cloning the repo locally
-Copy the repo's URL. In your GitHub account, click the Repositories tab and click on your new repo. Click the green “clone or download” button on the right. Make sure "use HTTPS" is selected (not SSH).
+Copy the repo's URL. In your GitHub account, click the Repositories tab and click on your new repo. Click the green “code” button on the right. Make sure "SSH" is selected.
 
 ![PACSPull Plugin](/images/repo/github-clone-repo.png)
 
-In the terminal, navigate to your home directory and clone the repo with:
+In the terminal, navigate to your home directory and create a github directory:
+
+Note: this step is not needed, but it will help us keep all our github repos under one location so it is easy for us to find in the future.
 ```
 cd ~
-git clone <URL> 
+mkdir github
 ```
-You should be able to paste the URL into the terminal by right-clicking and selecting `Paste`. (`ctrl` + `v` usually won't work.)
 
-You should see:
+Then navigate to the github directory and clone your repo there:
+```
+cd github
+git clone <URL>
+```
+
+You should see something like this:
 ```
 Cloning into 'myawesomerepo'...
 remote: Enumerating objects: 3, done.
