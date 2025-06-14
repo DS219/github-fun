@@ -46,7 +46,17 @@ git commit
 
 This will pull up your in-terminal editor of choice. In most instances you will wind up in [vim](https://vim.rtorr.com/). To make edits, simply hit `i` followed by the commit message you would like. Once you are done, hit escape followed by `:wq`.
 
-The commit message should be short and descriptive about the purpose of the commit or what you changed in the repo.
+The commit message should be short and descriptive about the purpose of the commit or what you changed in the repo. [https://cbea.ms/git-commit/](https://cbea.ms/git-commit/) is a very good blog post outlining some guidelines. In short:
+
+1. Separate subject from body with a blank line
+2. Limit the subject line to 50 characters
+3. Capitalize the subject line
+4. Do not end the subject line with a period
+5. Use the imperative mood in the subject line
+6. Wrap the body at 72 characters
+7. Use the body to explain what and why vs. how
+
+We highly recommend reading the blog post to get a deeper understanding of each of those lines.
 
 Tip: The `-m` flag allows you to specify a message as part of your commit command. While convenient for very small commit messages as part of simple changes, you may not want to use it if you are attempting to commit a complex set of changes.
 
