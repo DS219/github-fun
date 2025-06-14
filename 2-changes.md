@@ -40,9 +40,21 @@ Changes to be committed:
 
 To commit your changes and create a save point, use:
 
-`git commit -am "added question.txt file"`  
+```
+git commit
+``` 
 
-Tip: `-m ` allows you to specify a commit message. The commit message should be short and descriptive about the purpose of the commit or what you changed in the repo. `-a` creates a snapshot of all changes to tracked files in the working directory.
+This will pull up your in-terminal editor of choice. In most instances you will wind up in [vim](https://vim.rtorr.com/). To make edits, simply hit `i` followed by the commit message you would like. Once you are done, hit escape followed by `:wq`.
+
+The commit message should be short and descriptive about the purpose of the commit or what you changed in the repo.
+
+Tip: The `-m` flag allows you to specify a message as part of your commit command. While convenient for very small commit messages as part of simple changes, you may not want to use it if you are attempting to commit a complex set of changes.
+
+`git commit -m "added question.txt file"`
+
+Tip 2: You can use the `-a` flag to create a snapshot of all changes to tracked files in the working directory. It's not always advisable to use this as you may accidentally include things in a commit that you didn't want to. It is generally advisable to always manually add files
+
+`git commit -am "added question.txt file"`
 
 You should see:
 ```
